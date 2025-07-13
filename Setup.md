@@ -1,7 +1,7 @@
 **Environmental Setup Guide**
 
 **1. Install WSL2 and Ubuntu (for Windows users)**\
-purpose : Set up a Linux environment on Windows using WSL2 and Ubuntu.
+purpose : Set up a Linux environment on Windows using WSL2 and Ubuntu.\
           This will be the foundation for further bioinformatics or data analysis workflows.
 
 Step1: Install WSL2
@@ -22,8 +22,8 @@ Ubuntu    Runnig      2
 ```
 If you see Ubuntu and VERSION2, WSL2 is installed collectly.
 
-Step3: Launch Ubuntu
-Once started, open Ubuntu from the start menu.
+Step3: Launch Ubuntu\
+Once started, open Ubuntu from the start menu.\
 You will be asked to set a username and password(use alphanumeric characters.)
 
 Step4: Check Ubuntu Verson\
