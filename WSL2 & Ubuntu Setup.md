@@ -61,14 +61,16 @@ Step6: Install Essential Packages
 ```Ubuntu
 sudo apt install build--essential wget unzip git python3-pip htop
 ```
-Package	          Purpose\
-build-essential	Compiler and build tools (gcc, g++, make, etc.)\
-wget	          For downloading files via HTTP/HTTPS\
-unzip	          For extracting .zip files\
-curl	          For data transfer via HTTP/HTTPS\
-git	          For version control\
-python3-pip	Python package manager\
-htop	          Interactive process viewer\
+| Package      | Purpose                                |
+|--------------|----------------------------------------|
+| build-essential | Compiler and build tools (gcc, g++, make, etc.) |
+| wget         | For downloading files via HTTP/HTTPS   |
+| unzip        | For extracting `.zip` files            |
+| curl         | For data transfer via HTTP/HTTPS       |
+| git          | For version control                    |
+| python3-pip  | Python package manager                 |
+| htop         | Interactive process viewer             |
+
 
 Step6: Install Miniconda
 ```Ubuntu
@@ -96,9 +98,10 @@ echo 'export PATH=$PATH:$HOME/edirect' >> ~/.bashrc
 source ~/.bashrc
 ```
 Key Tools in EDirect:
-Command	   Function\
-esearch	   Performs text-based searches in NCBI databases (e.g., search for                                  genes,organisms, SRA entries).
-efetch	   Retrieves detailed data based on esearch results (e.g., FASTA sequences,                          GenBank      records, metadata).
+| Command  | Function |
+|----------|----------|
+| **esearch** | Performs text-based searches in NCBI databases (e.g., search for genes, organisms, SRA entries). |
+| **efetch**  | Retrieves detailed data based on `esearch` results (e.g., FASTA sequences, GenBank records, metadata). |
 
 
 
