@@ -50,6 +50,58 @@ LOGO=ubuntu-logo
 ```
 If the output looks like similar, your Ubuntu environment is ready.
 
+Step5: Update and Upgrade System Packages
+```Ubuntu
+sudo apt update
+sudo apt upgrade --y
+```
+Purpose: Keeping the system up-to-date ensures better compatibilit and security.
+
+Step6: Install Essential Packages
+```Ubuntu
+sudo apt install build--essential wget unzip git python3-pip htop
+```
+Package	          Purpose\
+build-essential	Compiler and build tools (gcc, g++, make, etc.)\
+wget	          For downloading files via HTTP/HTTPS\
+unzip	          For extracting .zip files\
+curl	          For data transfer via HTTP/HTTPS\
+git	          For version control\
+python3-pip	Python package manager\
+htop	          Interactive process viewer\
+
+Step6: Install Miniconda
+```Ubuntu
+cd ~
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+bash Miniconda3-latest-Linux-x86_64.sh
+```
+After installation, either:
+Restart the terminal, or\
+Run:
+```Ubuntu
+source ~/.bashrc
+```
+
+Step7: Install Entrez Direct (EDirect)
+Entrez Direct(EDirect) is a suite of UNIX command-line tools for accessing NCBI's databases\
+programmatically.
+```Ubuntu
+sh -c "$(curl -fsSL https://ftp.ncbi.nlm.nih.gov/entrez/entrezdirect/install-edirect.sh)"
+```
+
+Add EDirect to PATH
+```Ubuntu
+echo 'export PATH=$PATH:$HOME/edirect' >> ~/.bashrc
+source ~/.bashrc
+```
+Key Tools in EDirect:
+Command	   Function\
+esearch	   Performs text-based searches in NCBI databases (e.g., search for                                  genes,organisms, SRA entries).
+efetch	   Retrieves detailed data based on esearch results (e.g., FASTA sequences,                          GenBank      records, metadata).
+
+
+
 
 
 
