@@ -10,7 +10,7 @@ Step2: Install Sra-toolkit, pigz(Oarallel gzip)
 ```Ubuntu
 sudo apt install sra-toolkit
 ```
-Purpose: Tools for downloading and converting data from NCBI's Sequence Read Archive (SRA).\
+Purpose: Tools for downloading and converting data from NCBI's Sequence Read Archive (SRA).
 
 Altenative (recommended for latest version):
 ```Ubuntu
