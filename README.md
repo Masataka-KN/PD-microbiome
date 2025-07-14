@@ -2,7 +2,7 @@
 
 ### Operating System
 - **WSL2 (Windows Subsystem for Linux 2)**
-- **Ubuntu 22.04 LTS**
+- **Ubuntu 24.04.2 LTS**
 - **Miniconda** (for package and environment management)
 
 ### Main Tools and Versions
