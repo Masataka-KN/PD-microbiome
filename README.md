@@ -1,7 +1,10 @@
 ## Environment and Version Information
 
 ### Operating System
-- **WSL2 (Windows Subsystem for Linux 2)**
+- **OS:** Windows 11 Pro (Build 22631.5624)
+- **WSL Version:** 2.5.9.0
+- **WSL Kernel:** 6.6.87.2-1
+- **WSLg Version:** 1.0.66
 - **Ubuntu 24.04.2 LTS**
 - **Miniconda**
 - **Conda 25.5.1**
