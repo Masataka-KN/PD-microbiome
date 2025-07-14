@@ -18,6 +18,8 @@ multiqc QC/fastqc_raw -o QC/multiqc_raw
 ```
 
 Step3: Adapter and Quality Trimming - Trim Galore
+The dependency package for trim_galore does not yet support python=3.13, \
+so create python=3.10 in a separate environment.
 ```
 mkdir -p QC/trim_galore
 
