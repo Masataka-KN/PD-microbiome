@@ -1,7 +1,7 @@
 Step1: Environmental Setup\
 I used conda to install all necessary tools in one environment to avoid version conflicts:
 ```
-conda create -n qcenv -c bioconda -c conda-forge python=3.10 \
+conda create -n qc -c bioconda -c conda-forge python=3.10 \
     fastqc multiqc fastp trim-galore prinseq-plus-plus kneaddata bowtie2 pigz seqkit -y
 
 conda activate qcenv
