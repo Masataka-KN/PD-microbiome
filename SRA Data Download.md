@@ -28,10 +28,35 @@ Step3: Download SRA Data\
 Create a directory for SRA Data
 ```Ubuntu
 mkdir -p ~/sra_files
+mkdir -p ~/sra_files/SRR10403500
 ```
 Download sra file using prefetch
 ```
 prefetch SRR10403500 -O ~/sra_files
+```
+ダウンロードしたファイルを確認
+```
+ls -lh ~/sra_files/
+```
+
+**SRA File**
+For details on the [sra](https://www.ncbi.nlm.nih.gov/sra/docs/submitformats/) format, refer to the official NCBI documentation.
+
+In SRA data management, each Run (SRR) has its own unique data structure and metadata.\
+Therefore, it is recommended to create separate folders for each Run to manage the data independently.
+
+**Checking Download Progress**\
+⓵Check file size
+```
+ls -lh ~/sra_files/SRR10403510
+```
+⓶Real-time monitoring(every 5s)
+```
+watch -n 5 "ls -lh ~/sra_files/SRR10403500"
+```
+⓷Monitor CPU and I/O usage
+```
+htop
 ```
 
 Step4: Convert .sra to FASTQ\
