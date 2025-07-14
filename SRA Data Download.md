@@ -16,6 +16,10 @@ Altenative (recommended for latest version):
 ```Ubuntu
 conda install -c bioconda sra-tool
 ```
+###
+Do not mix apt install sra-toolkit and conda install sra-tools.
+Use conda for consistency.
+
 ```Ubuntu
 sudo apt install pigz
 ```
