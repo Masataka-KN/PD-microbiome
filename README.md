@@ -3,7 +3,8 @@
 ### Operating System
 - **WSL2 (Windows Subsystem for Linux 2)**
 - **Ubuntu 24.04.2 LTS**
-- **Miniconda** (for package and environment management)
+- **Miniconda**
+- **Conda 25.5.1**
 
 ### Main Tools and Versions
 
@@ -24,8 +25,8 @@
 
 | Environment | Python Version | Purpose |
 |---|---|---|
-| **biobakery3 (HUMAnN / MetaPhlAn environment)** | Python 3.10 | For HUMAnN3 and MetaPhlAn3 |
-| **Trim Galore environment** | Python 3.10 | To avoid compatibility issues with Cutadapt |
-| **Base environment** | Python 3.13 | For Quality Control |
+| **biobakery3 (HUMAnN / MetaPhlAn environment)** | Python 3.12.11 | For HUMAnN3 and MetaPhlAn3 |
+| **Trim Galore environment** | Python 3.10.18 | To avoid compatibility issues with Cutadapt |
+| **Base environment** | Python 3.13.5 | For Quality Control |
 
 
