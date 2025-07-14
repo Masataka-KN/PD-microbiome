@@ -37,7 +37,8 @@ pip install metaphlan==3.0.14
 
 Also, remove old database files if needed
 ```
-rm /home/masat_aka/miniconda3/envs/biobakery3/lib/python3.12/site-packages/metaphlan/metaphlan_databases/mpa_v31_CHOCOPhlAn_201901.*
+rm /path/to/your/env/lib/python3.12/site-packages/metaphlan/metaphlan_databases/mpa_v31_CHOCOPhlAn_201901.*
+
 ```
 
 Step5: Convert Gene Families to Metacyc:
