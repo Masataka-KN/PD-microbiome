@@ -17,7 +17,7 @@ fastqc -t 8 -o QC/fastqc_raw data/SRR10403500_1.fastq.gz data/SRR10403500_2.fast
 multiqc QC/fastqc_raw -o QC/multiqc_raw
 ```
 
-Step3: Adapter and Quality Trimming - Trim Galore
+Step3: Adapter and Quality Trimming - Trim Galore\
 The dependency package for trim_galore does not yet support python=3.13, \
 so create python=3.10 in a separate environment.
 ```
