@@ -46,7 +46,7 @@ ls -lh ~/sra_files/
 ```
 
 **SRA File**
-For details on the [sra](https://www.ncbi.nlm.nih.gov/sra/docs/submitformats/) format, refer to the official NCBI documentation.
+For details on the [sra format](https://www.ncbi.nlm.nih.gov/sra/docs/submitformats/), refer to the official NCBI documentation.
 
 In SRA data management, each Run (SRR) has its own unique data structure and metadata.\
 Therefore, it is recommended to create separate folders for each Run to manage the data independently.
