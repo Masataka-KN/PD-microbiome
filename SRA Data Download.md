@@ -6,6 +6,7 @@ echo 'export PATH="$HOME/miniconda3/bin:$PATH"' >> ~/.bashrc
 source ~/.bashrc
 ```
 
+
 Step2: Install Sra-toolkit, pigz(Oarallel gzip)
 ```Ubuntu
 sudo apt install sra-toolkit
@@ -23,6 +24,7 @@ Use conda for consistency.
 ```Ubuntu
 sudo apt install pigz
 ```
+
 
 Step3: Download SRA Data\
 Create a directory for SRA Data
@@ -59,6 +61,7 @@ watch -n 5 "ls -lh ~/sra_files/SRR10403500"
 htop
 ```
 
+
 Step4: Convert .sra to FASTQ\
 Create output sirectory for FASTQ:
 ```
@@ -71,12 +74,14 @@ fasterq-dump ~/sra_files/SRR10403500.sra -e 8 -p --split-files -O ~fastq_data
 -e-8 : Use 8 threads\
 --split-files : Output paired-end reads as _1.fastq and _2.fastq
 
+
 Step5: Compress FASTQ Files using pigz:
 ```
 pigz -p 8 ~/fastq_data/SRR10403500_1.fastq
 pigz -p 8 ~/fastq_data/SRR10403500_2.fastq
 ```
 -p 8 : Use 8 CPU cores for compression
+
 
 Step6: Alternative: Direct FASTQ Dpwnload from ENA\
 In some cases. you can download Fastq.gz files directly from ENA(faster and simpler)
@@ -86,17 +91,20 @@ wget https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR104/000/SRR10403500/SRR10403500_1.f
 wget https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR104/000/SRR10403500/SRR10403500_2.fastq.gz
 ```
 
+
 Step7: Check File Sizes and Contents
 ```
 ls -lh ~/sra_files/
 du -sh ~/sra_files/SRR10403500/SRR10403500.sra
 ```
 
+
 Step8: Inspect Reads\
 Use vb-dump to display the first read in the sra file
 ```
 vdb-dump -R 1 -C READ ~/sra_files/SRR10403500/SRR10403500.sra
 ```
+
 
 Step9: Organize FASTQ Files\
 Move compressed Fastq files into data/ directory
@@ -106,11 +114,7 @@ mv SRR10403500_1.fastq.gz data/
 mv SRR10403500_2.fastq.gz data/
 ```
 
-###Monitor Disk Usage\
-check disk usage every 10 seconds:
-```
-watch -n -10 'du -h ~sra_files'
-```
+
 
 
 
