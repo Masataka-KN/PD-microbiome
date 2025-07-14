@@ -77,9 +77,9 @@ multiqc QC/fastqc_prinseq -o QC/multiqc_prinseq
 **Troubleshooting: ICU Library Errors in FastQC**
 FastQC uses libicu for:
 
-　Generating reports with proper string encoding
-　Handling internationalized text or character sorting
-　Possibly for GUI elements or PDF exports (even in CLI mode, some dependencies remain)
+Generating reports with proper string encoding\
+Handling internationalized text or character sorting\
+Possibly for GUI elements or PDF exports (even in CLI mode, some dependencies remain)
 
 Common Error:\
 When running FastQC, you might encounter:
