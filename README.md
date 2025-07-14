@@ -1,7 +1,7 @@
 ## Environment and Version Information
 
 ### Operating System
-- **OS:** Windows 11 Pro (Build 22631.5624)
+- **OS:** Windows 11 Pro
 - **WSL Version:** 2.5.9.0
 - **WSL Kernel:** 6.6.87.2-1
 - **WSLg Version:** 1.0.66
