@@ -1,6 +1,3 @@
-# Parkinson's Disease Microbiome Analysis
-
-# Parkinson's Disease Gut Microbiome Analysis
 
 ## 📖 Overview
 
