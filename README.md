@@ -26,6 +26,6 @@
 |---|---|---|
 | **biobakery3 (HUMAnN / MetaPhlAn environment)** | Python 3.10 | For HUMAnN3 and MetaPhlAn3 |
 | **Trim Galore environment** | Python 3.10 | To avoid compatibility issues with Cutadapt |
-| **Base environment** | Python 3.13 |  
+| **Base environment** | Python 3.13 | For Quality Control |
 
 
