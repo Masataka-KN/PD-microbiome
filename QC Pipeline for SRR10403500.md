@@ -74,10 +74,27 @@ multiqc QC/fastqc_prinseq -o QC/multiqc_prinseq
 ```
 
 
+**Troubleshooting: ICU Library Errors in FastQC**
+FastQC uses libicu for:
 
+　Generating reports with proper string encoding
+　Handling internationalized text or character sorting
+　Possibly for GUI elements or PDF exports (even in CLI mode, some dependencies remain)
 
+Common Error:\
+When running FastQC, you might encounter:
+```
+error while loading shared libraries: libicui18n.so.56: cannot open shared object file: No such file or directory
+```
+This happens because FastQC expects an older ICU version (56), but recent Linux distributions provide ICU 74 or newer.
 
-
+Solution: Create Symbolic Links:\
+This happens because FastQC expects an older ICU version (56), but recent Linux distributions provide ICU 74 or newer.
+```
+sudo ln -sf /usr/lib/x86_64-linux-gnu/libicuuc.so.74 /usr/lib/x86_64-linux-gnu/libicuuc.so.56
+sudo ln -sf /usr/lib/x86_64-linux-gnu/libicui18n.so.74 /usr/lib/x86_64-linux-gnu/libicui18n.so.56
+sudo ln -sf /usr/lib/x86_64-linux-gnu/libicudata.so.74 /usr/lib/x86_64-linux-gnu/libicudata.so.56
+```
 
 
 
