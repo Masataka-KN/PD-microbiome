@@ -89,6 +89,14 @@ prinseq++ \
   -out_gz \
   -out_name QC/prinseq/SRR10403500_prinseq
 ```
+Output Files:\
+| File | Description |
+| --- | --- |
+| `*_good_out_R1.fastq.gz` | Quality-passed forward reads (R1) |
+| `*_good_out_R2.fastq.gz` | Quality-passed reverse reads (R2) |
+| `*_single_out_R3.fastq.gz` | Singleton reads (only one of the pair passed filtering; R3) |
+
+
 
 Step6: After QC - FastQC & MultiQC
 ```
