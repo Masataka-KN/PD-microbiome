@@ -89,7 +89,7 @@ prinseq++ \
   -out_gz \
   -out_name QC/prinseq/SRR10403500_prinseq
 ```
-Output Files:\
+Output Files:
 | File | Description |
 | --- | --- |
 | `*_good_out_R1.fastq.gz` | Quality-passed forward reads (R1) |
